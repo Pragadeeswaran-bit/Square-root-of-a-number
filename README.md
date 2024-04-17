@@ -18,14 +18,27 @@ To write a program to find the square root of a number.
 ```
 /*
 Program to find the square root for the given number(newton's method) using function.
-Developed by: 
-RegisterNumber:  
+Developed by: Pragadeeswaran L
+RegisterNumber: 212223240120
 */
+def newton_square_root(number):
+    if number<0:
+        print("Square root is not defined for negative numbers.")
+    x=number/2.0
+    while True:
+        new_x=0.5*(x+number/x)
+        if new_x==x:
+            break
+        x=new_x
+    return x
+number=int(input())
+result=newton_square_root(number)
+print(f"Square root of the number: {result}")
+
 ```
 
 ## Output:
-
-
+![image](https://github.com/Pragadeeswaran-bit/Square-root-of-a-number/assets/147473828/5e513e80-a03b-4324-a40d-0324d1cdd5af)
 
 ## Result:
 Thus the program to find the square root for the given number(newton's method) using function is written and verified using python programming.
